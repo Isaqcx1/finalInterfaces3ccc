@@ -63,7 +63,7 @@ npm install
 
 Luego ejecuta Angular:
 
-npm run start
+npm install --legacy-peer-deps
 
 La aplicación se abrirá en el navegador en:
 
