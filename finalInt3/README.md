@@ -1,59 +1,134 @@
-# Parcialint
+===========================================
+   SISTEMA DE GESTIÓN DE CURSOS - ANGULAR
+===========================================
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.9.
+Este proyecto es una aplicación web desarrollada con:
+- Frontend: Angular
+- Backend: Node.js + Express
+- Autenticación: JWT
+- Base de datos temporal en memoria
 
-## Development server
+Permite gestionar:
+- Usuarios
+- Cursos
+- Inscripciones
+- Panel de administrador
+- Reportes
 
-To start a local development server, run:
+===========================================
+1. CLONAR EL PROYECTO DESDE GITHUB
+===========================================
 
-```bash
-ng serve
-```
+Primero debes clonar el proyecto desde GitHub con el siguiente comando:
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+git clone https://github.com/Isaqcx1/finalInterfaces3ccc
 
-## Code scaffolding
+Luego entras a la carpeta del proyecto:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+cd finalInt3
 
-```bash
-ng generate component component-name
-```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-```bash
-ng generate --help
-```
+===========================================
+2. INICIAR EL BACKEND (API)
+===========================================
 
-## Building
+Desde la carpeta del proyecto, entra a la carpeta backend:
 
-To build the project run:
+cd backend
 
-```bash
-ng build
-```
+Instala las dependencias (solo la primera vez):
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+npm install
 
-## Running unit tests
+Luego inicia el servidor:
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+node server.js
 
-```bash
-ng test
-```
+La API se ejecutará en:
 
-## Running end-to-end tests
+http://localhost:3000
 
-For end-to-end (e2e) testing, run:
+===========================================
+3. INICIAR EL FRONTEND (ANGULAR)
+===========================================
 
-```bash
-ng e2e
-```
+Abre otra terminal (sin cerrar el backend) y entra a la carpeta del frontend:
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+cd finalInt3
 
-## Additional Resources
+Instala las dependencias (solo la primera vez):
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+npm install
+
+Luego ejecuta Angular:
+
+npm run start
+
+La aplicación se abrirá en el navegador en:
+
+http://localhost:4200
+
+===========================================
+4. USUARIOS PARA INICIAR SESIÓN
+===========================================
+
+USUARIO ADMINISTRADOR:
+Usuario: admin
+Contraseña: 123
+
+Este usuario puede:
+- Crear cursos
+- Editar cursos
+- Eliminar cursos
+- Ver usuarios registrados
+- Eliminar usuarios
+- Ver reportes
+- Ver monto total
+- Ver inscripciones
+
+USUARIOS NORMALES:
+Se pueden crear desde el formulario de registro en la aplicación.
+
+Los usuarios pueden:
+- Ver cursos activos
+- Inscribirse en cursos
+- Ver sus cursos inscritos
+- Eliminar cursos inscritos
+- Editar su perfil
+
+===========================================
+5. FUNCIONALIDADES PRINCIPALES
+===========================================
+
+- Login con JWT
+- Rutas protegidas con Guards
+- Control de acceso por rol (admin y usuario)
+- CRUD completo de cursos
+- Gestión de usuarios
+- Sistema de inscripciones
+- Reportes generales:
+  - Total de usuarios
+  - Total de cursos
+  - Total de inscripciones
+  - Monto total recaudado
+
+===========================================
+6. NOTAS IMPORTANTES
+===========================================
+
+- El backend usa almacenamiento en memoria, por lo tanto:
+  - Si se apaga el servidor, los cursos se borran.
+- El frontend usa Angular Standalone Components.
+- El sistema es solo con fines educativos.
+
+===========================================
+AUTOR: (Grupo:
+SALVINIA PALOMINO OCHOA 
+ISAAC GAVIDIA RIOJA 
+GOSFREY ARMANDO LOPEZ FLORES 
+DANIEL ALESSANDER GUILLÉN RIOS )
+
+CURSO: (Desarrollo de interfaces 3)
+FECHA: (9 de diciembre 2025)
+===========================================
